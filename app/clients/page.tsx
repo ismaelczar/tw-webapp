@@ -1,66 +1,35 @@
-import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "../_components/ui/pagination";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../_components/ui/table";
+import { HelpCircle } from "lucide-react";
+import { Button } from "../_components/ui/button";
+import DropdownMenuButton from "./_components/dropdown-menu";
+import SearchForm from "./_components/search-form";
+import TableClients from "./_components/table-clients";
+
 
 const Clients = () => {
   return (
     <main className="flex flex-col items-center justify-between py-8 px-4 h-screen">
       <div className="max-w-[1180px] w-full">
-        <Table className="w-full border">
-          <TableHeader className="bg-secondary">
-            <TableRow className="border">
-              <TableHead className="p-2 w-[15px]"></TableHead>
-              <TableHead className="p-2 w-[15px]">Código</TableHead>
-              <TableHead className="p-2 w-[200px]">Nome</TableHead>
-              <TableHead className="p-2 w-[160px]">CNPJ/CPF</TableHead>
-              <TableHead className="p-2 w-[100px]">Telefone</TableHead>
-              <TableHead className="p-2 w-[100px]">Situação</TableHead>
-              <TableHead className="p-2 w-[60px]">Tipo</TableHead>
-              <TableHead className="p-2 w-[30px]"></TableHead>
-              <TableHead className="p-2 w-[30px]"></TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            <TableRow>
-              <TableCell></TableCell>
-              <TableCell>1</TableCell>
-              <TableCell>UPCIGA AUTOMAÇÃO COMERCIAL</TableCell>
-              <TableCell>27.686.124/0001-29</TableCell>
-              <TableCell>3034-3040</TableCell>
-              <TableCell>Ativo</TableCell>
-              <TableCell>Avulso</TableCell>
-              <TableCell></TableCell>
-              <TableCell></TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
+
+        <div className="flex items-center justify-between">
+          <h1 className="text-2xl font-bold text-primary">Clientes</h1>
+          <HelpCircle size={16} className="text-primary" />
+        </div>
+
+        <div className="flex items-center justify-between pt-10 pb-4">
+          <div className="flex items-center gap-2">
+            <Button>Adicionar</Button>
+            <Button variant="secondary">Alterar</Button>
+            <Button variant="secondary">Excluir</Button>
+            <DropdownMenuButton />
+          </div>
+
+          <SearchForm />
+        </div>
+
+        <TableClients />
+
       </div>
-
-      <Pagination>
-        <PaginationContent>
-          <PaginationItem>
-            <PaginationPrevious href="#" />
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink href="#" isActive>1</PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink href="#" >
-              2
-            </PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink href="#">3</PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationEllipsis />
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationNext href="#" />
-          </PaginationItem>
-        </PaginationContent>
-      </Pagination>
-
-    </main>
+    </main >
   );
 }
 
