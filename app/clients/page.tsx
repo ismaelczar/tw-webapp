@@ -11,7 +11,7 @@ const Clients = () => {
       <div className="max-w-[1180px] w-full">
 
         <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-primary">Clientes</h1>
+          <h1 className="text-2xl font-bold text-primary ">Clientes</h1>
           <HelpCircle size={16} className="text-primary" />
         </div>
 
