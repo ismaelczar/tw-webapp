@@ -2,10 +2,8 @@ import Link from "next/link";
 import { Bell, HelpCircle, Plus, Settings } from "lucide-react";
 import { Separator } from "./ui/separator";
 import AccountMenu from "./account-menu";
-
 import Logo from '@/public/UP.png'
 import Image from "next/image";
-
 const Header = () => {
   return (
     <header>
@@ -26,9 +24,10 @@ const Header = () => {
             <Link href={''} className="text-white font-semibold text-sm">Manuais</Link>
           </nav>
           <div className="flex items-center gap-4">
-            <HelpCircle size={20} color="#afb700" />
-            <Settings size={20} color="#afb700" />
-            <Bell size={20} color="#afb700" />
+            <HelpCircle size={20} className="text-primary" />
+            <Settings size={20} className="text-primary" />
+            <Bell size={20} className="text-primary" />
+
             <AccountMenu />
           </div>
         </div>
