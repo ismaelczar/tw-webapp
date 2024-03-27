@@ -29,7 +29,7 @@ const TableClients = () => {
             <TableCell>27.686.124/0001-29</TableCell>
             <TableCell>3034-3040</TableCell>
             <TableCell>Ativo</TableCell>
-            <TableCell>Avulso</TableCell>
+            <TableCell>Cliente</TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
           </TableRow>

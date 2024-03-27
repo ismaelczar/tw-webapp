@@ -24,15 +24,14 @@ const Header = () => {
             <Link href={''} className="text-white font-semibold text-sm">Manuais</Link>
           </nav>
           <div className="flex items-center gap-4">
-            <HelpCircle size={20} className="text-primary" />
-            <Settings size={20} className="text-primary" />
-            <Bell size={20} className="text-primary" />
+            <HelpCircle size={20} className="text-white" />
+            <Settings size={20} className="text-white" />
+            <Bell size={20} className="text-white" />
 
             <AccountMenu />
           </div>
         </div>
       </div>
-
       <Separator />
     </header>
   );

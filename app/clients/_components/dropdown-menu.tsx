@@ -6,16 +6,13 @@ const DropdownMenuButton = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="secondary">Mais ações</Button>
+        <Button variant="outline">Mais ações</Button>
       </DropdownMenuTrigger>
 
       <DropdownMenuContent align="start" >
-        <DropdownMenuItem>Copiar</DropdownMenuItem>
-        <DropdownMenuItem>Lançar Contas</DropdownMenuItem>
-        <DropdownMenuItem>Imprimir dados</DropdownMenuItem>
-        <DropdownMenuItem>Enviar e-mail</DropdownMenuItem>
-        <DropdownMenuItem>Enviar mensagem WhatsApp</DropdownMenuItem>
-        <DropdownMenuItem>Alterar Status</DropdownMenuItem>
+        <DropdownMenuItem>Exportar</DropdownMenuItem>
+        <DropdownMenuItem>Imprimir</DropdownMenuItem>
+
       </DropdownMenuContent>
     </DropdownMenu>
 
